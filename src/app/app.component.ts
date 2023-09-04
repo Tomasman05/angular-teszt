@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'teszt';
+  title:string = 'teszt';
+  valtozo:number = 5;
+  tomb:any = ["Attila","Gergő", "Kriszti"]
 }
