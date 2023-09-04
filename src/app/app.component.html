@@ -12,3 +12,20 @@
     {{nev}}
   </div>
 </ng-template>
+<br>
+<br>
+<div *ngFor="let tancsi of obj">
+  {{tancsi.name}},{{tancsi.age}}
+  
+</div>
+
+<br>
+
+<span *ngFor="let oszlop of oszlopok">
+  <span>{{oszlop}}</span>
+</span>
+<div *ngFor="let tancsi of obj">
+  <span *ngFor="let oszlop of oszlopok">
+    <span>{{tancsi[oszlop]}}</span>
+  </span>
+</div>
