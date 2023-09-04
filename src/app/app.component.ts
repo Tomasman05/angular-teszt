@@ -9,4 +9,5 @@ export class AppComponent {
   title:string = 'teszt';
   valtozo:number = 5;
   tomb:any = ["Attila","Gergő", "Kriszti"]
+  //tomb:any = []
 }

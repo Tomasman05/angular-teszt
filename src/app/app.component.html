@@ -1,8 +1,14 @@
 <h1>Szoszi</h1>
-<h2>{{title}}</h2>
-<h2>{{valtozo}}</h2>
-<h2>{{tomb[2]}}</h2>
+{{title}}
+{{valtozo}}
+{{tomb[2]}}
 
-<div *ngFor="let nev of tomb">
-  {{nev}}
-</div>
+<ng-container *ngIf="tomb.length== 0;else vanelem">
+  <h2>Nincsenek nevek felvéve</h2>
+</ng-container>
+
+<ng-template #vanelem>
+  <div *ngFor="let nev of tomb">
+    {{nev}}
+  </div>
+</ng-template>
